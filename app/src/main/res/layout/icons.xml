@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_fastfood_24"
+        app:tint="#98918E"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tt3"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        />
+
+    <TextView
+        android:id="@+id/tt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/i1"
+        app:layout_constraintStart_toEndOf="@id/i1"
+        app:layout_constraintEnd_toStartOf="@id/i4"/>
+
+    <ImageView
+        android:id="@+id/i4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:src="@drawable/ic_baseline_fastfood_24"
+        app:tint="#98918E"
+        app:layout_constraintEnd_toStartOf="@id/tt1"
+        app:layout_constraintStart_toEndOf="@id/tt3"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        />
+    <TextView
+        android:id="@+id/tt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/i1"
+        app:layout_constraintEnd_toStartOf="@id/i3"
+        app:layout_constraintStart_toEndOf="@id/i4"/>
+
+    <ImageView
+        android:id="@+id/i3"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_baseline_fastfood_24"
+        app:layout_constraintStart_toEndOf="@id/tt1"
+        app:layout_constraintEnd_toStartOf="@id/tt0"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        app:tint="#98918E"
+        />
+
+    <TextView
+        android:id="@+id/tt0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@id/i1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/i3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

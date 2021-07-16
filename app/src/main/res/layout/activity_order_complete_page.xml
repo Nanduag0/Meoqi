@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderCompletePage"
+    android:background="#17171A"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="70dp"
+            >
+
+            <TextView
+                android:id="@+id/success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/card_bg_2"
+                android:backgroundTint="#31FA7247"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="50dp"
+                android:textAlignment="center"
+                android:paddingEnd="65dp"
+                android:drawablePadding="10dp"
+                android:text="Success !"
+                android:textColor="@color/colorOrange"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:drawableStartCompat="@drawable/ic_tick_done_1"
+                app:drawableTint="@color/colorOrange" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Browse Complementary Items"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/success" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@+id/t6">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="#222227"
+                    android:orientation="vertical"
+                    android:paddingEnd="2dp"
+                    android:id="@+id/drinks_lay"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_drinks"
+                        />
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon3"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Drinks"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_below="@+id/title3"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        app:tint="#40FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="#222227"
+                    android:orientation="vertical"
+                    android:paddingEnd="2dp"
+                    android:id="@+id/food_lay"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_serve_food" />
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon2"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Food"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="52dp"
+                        android:layout_below="@+id/title2"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        app:tint="#40FFFFFF" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+                <RelativeLayout
+                    android:id="@+id/gift_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="#222227"
+                    android:orientation="vertical"
+                    android:paddingEnd="2dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_gift_box" />
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon1"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Designer\ngifts"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@+id/title1"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        app:tint="#40FFFFFF" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_bg"
+                    android:backgroundTint="#222227"
+                    android:orientation="vertical"
+                    android:paddingEnd="2dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_others"
+                        />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Tickets &amp;
+    Guest list
+    codes
+    "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_below="@+id/title"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        app:tint="#40FFFFFF" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Meoqi presents Demo text This is the first and most commonly used option to make"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv2"
+        app:layout_constraintVertical_bias="1"
+        android:layout_gravity="bottom"
+        android:layout_margin="12dp"
+        android:background="@drawable/bottom_nav_bg"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/icon_color"
+        app:itemTextColor="@drawable/icon_color"
+        app:labelVisibilityMode="unlabeled"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

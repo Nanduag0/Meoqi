@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.BottomSheetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con1"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        android:background="@drawable/card_bg"
+        android:backgroundTint="@color/colorBlack"
+
+
+        android:padding="5dp"
+        app:behavior_hideable="false"
+
+        app:behavior_peekHeight="105dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+        >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomorrowland"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/t1"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:text="Seoul, South Korea"
+
+            android:textColor="#7D7777"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@id/t2"
+            android:layout_marginTop="15dp"
+
+            />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 03"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invites \nFree Entry"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/t3"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@id/tt1"
+            app:layout_constraintEnd_toStartOf="@+id/tt3"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            />
+
+        <TextView
+            android:id="@+id/tt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i1"
+            app:layout_constraintStart_toEndOf="@id/i1"
+            app:layout_constraintEnd_toStartOf="@id/i4"/>
+
+        <ImageView
+            android:id="@+id/i4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            app:layout_constraintEnd_toStartOf="@id/tt1"
+            app:layout_constraintStart_toEndOf="@id/tt3"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            />
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i1"
+            app:layout_constraintEnd_toStartOf="@id/i3"
+            app:layout_constraintStart_toEndOf="@id/i4"/>
+
+        <ImageView
+            android:id="@+id/i3"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:layout_constraintStart_toEndOf="@id/tt1"
+            app:layout_constraintEnd_toStartOf="@id/tt0"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            app:tint="@color/colorOrange"
+            />
+
+        <TextView
+            android:id="@+id/tt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i1"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/i3"/>
+
+
+        <View
+            android:id="@+id/v11"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#777272"
+            app:layout_constraintTop_toBottomOf="@id/t3"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+
+            app:layout_constraintBottom_toTopOf="@id/t31"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/t31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 05"
+            app:layout_constraintTop_toBottomOf="@id/v11"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invites \nFree Entry"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/t3"
+            app:layout_constraintTop_toBottomOf="@id/v11"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/i11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@id/tt11"
+            app:layout_constraintEnd_toStartOf="@+id/tt31"
+            app:layout_constraintTop_toBottomOf="@id/v11"
+            />
+
+        <TextView
+            android:id="@+id/tt31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i11"
+            app:layout_constraintStart_toEndOf="@id/i11"
+            app:layout_constraintEnd_toStartOf="@id/i41"/>
+
+        <ImageView
+            android:id="@+id/i41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            app:layout_constraintEnd_toStartOf="@id/tt11"
+            app:layout_constraintStart_toEndOf="@id/tt31"
+            app:layout_constraintTop_toBottomOf="@id/v11"
+            />
+        <TextView
+            android:id="@+id/tt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i11"
+            app:layout_constraintEnd_toStartOf="@id/i31"
+            app:layout_constraintStart_toEndOf="@id/i41"/>
+
+        <ImageView
+            android:id="@+id/i31"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:layout_constraintStart_toEndOf="@id/tt11"
+            app:layout_constraintEnd_toStartOf="@id/tt01"
+            app:layout_constraintTop_toBottomOf="@id/v11"
+            app:tint="@color/colorOrange"
+            />
+
+        <TextView
+            android:id="@+id/tt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i11"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/i31"/>
+
+        <!--next-->
+
+        <View
+            android:id="@+id/v12"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#777272"
+            app:layout_constraintTop_toBottomOf="@id/tt01"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+
+            app:layout_constraintBottom_toTopOf="@id/t32"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/t32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 10"
+            app:layout_constraintTop_toBottomOf="@id/v12"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invites \nFree Entry"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/t32"
+            app:layout_constraintTop_toBottomOf="@id/v12"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/i12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@id/tt12"
+            app:layout_constraintEnd_toStartOf="@+id/tt32"
+            app:layout_constraintTop_toBottomOf="@id/v12"
+            />
+
+        <TextView
+            android:id="@+id/tt32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i12"
+            app:layout_constraintStart_toEndOf="@id/i12"
+            app:layout_constraintEnd_toStartOf="@id/i42"/>
+
+        <ImageView
+            android:id="@+id/i42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            app:layout_constraintEnd_toStartOf="@id/tt12"
+            app:layout_constraintStart_toEndOf="@id/tt32"
+            app:layout_constraintTop_toBottomOf="@id/v12"
+            />
+        <TextView
+            android:id="@+id/tt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i12"
+            app:layout_constraintEnd_toStartOf="@id/i32"
+            app:layout_constraintStart_toEndOf="@id/i42"/>
+
+        <ImageView
+            android:id="@+id/i32"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:layout_constraintStart_toEndOf="@id/tt12"
+            app:layout_constraintEnd_toStartOf="@id/tt02"
+            app:layout_constraintTop_toBottomOf="@id/v12"
+            app:tint="@color/colorOrange"
+            />
+
+        <TextView
+            android:id="@+id/tt02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i12"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/i32"/>
+
+        <!--next-->
+
+        <View
+            android:id="@+id/v13"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#777272"
+            app:layout_constraintTop_toBottomOf="@id/tt02"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintBottom_toTopOf="@id/t33"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/t33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 15"
+            app:layout_constraintTop_toBottomOf="@id/v13"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:textColor="@color/colorWhite"
+
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invites \nFree Entry"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/t33"
+            app:layout_constraintTop_toBottomOf="@id/v13"
+            android:layout_marginStart="15dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/i13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toEndOf="@id/tt13"
+            app:layout_constraintEnd_toStartOf="@+id/tt33"
+            app:layout_constraintTop_toBottomOf="@id/v13"
+            />
+
+        <TextView
+            android:id="@+id/tt33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i13"
+            app:layout_constraintStart_toEndOf="@id/i13"
+            app:layout_constraintEnd_toStartOf="@id/i43"/>
+
+        <ImageView
+            android:id="@+id/i43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:tint="@color/colorOrange"
+            app:layout_constraintEnd_toStartOf="@id/tt13"
+            app:layout_constraintStart_toEndOf="@id/tt33"
+            app:layout_constraintTop_toBottomOf="@id/v13"
+            />
+        <TextView
+            android:id="@+id/tt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i13"
+            app:layout_constraintEnd_toStartOf="@id/i33"
+            app:layout_constraintStart_toEndOf="@id/i43"/>
+
+        <ImageView
+            android:id="@+id/i33"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_fastfood_24"
+            app:layout_constraintStart_toEndOf="@id/tt13"
+            app:layout_constraintEnd_toStartOf="@id/tt03"
+            app:layout_constraintTop_toBottomOf="@id/v13"
+            app:tint="@color/colorOrange"
+            />
+
+        <TextView
+            android:id="@+id/tt03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/i13"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/i33"/>
+
+
+        <View
+            android:id="@+id/v14"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#777272"
+            app:layout_constraintTop_toBottomOf="@id/tt03"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/tv2"
+            android:layout_marginBottom="10dp"
+
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:text="Meoqi presents Demo text This is the first and most commonly used option to make Horizontal RecyclerView."
+            android:textSize="12sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/v14"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/card_bg"
+            android:backgroundTint="#EB754F"
+            android:text="Invite friends and get free entry"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@id/tv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="20dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

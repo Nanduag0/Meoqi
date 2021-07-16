@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EventList"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/progress_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="40dp"
+        android:layout_gravity="center|top"
+        android:layout_alignTop="@+id/recycler_view_ass"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#201F1F"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:backgroundTint="#fff"
+            android:padding="4dp"
+            android:elevation="5dp"
+            android:layout_margin="5dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="70dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cl"
+            >
+
+
+            <EditText
+                android:id="@+id/iii1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_bg"
+                android:backgroundTint="@color/colorDark"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawableTint="@color/colorOrange"
+                android:hint="Search events"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorOrange"
+                android:textColorHint="@color/colorOrange"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/g1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Latest Music \nFestivals"
+                android:textColor="@color/colorWhite"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/iii1"
+                app:layout_constraintTop_toBottomOf="@id/iii1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintStart_toStartOf="@id/iii1"
+                app:layout_constraintTop_toBottomOf="@id/g1"
+
+
+                tools:itemCount="2"
+                tools:listitem="@layout/item_event1_rv" />
+
+            <TextView
+                android:id="@+id/tvv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Upcoming Events"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/iii1"
+                app:layout_constraintTop_toBottomOf="@id/rv1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="View all"
+                android:textColor="#FF5722"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tvv2"
+
+
+                tools:itemCount="2"
+                tools:listitem="@layout/item_event_list_2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv2"
+        app:layout_constraintVertical_bias="1"
+        android:layout_gravity="bottom"
+        android:layout_margin="12dp"
+        android:background="@drawable/bottom_nav_bg"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@drawable/icon_color"
+        app:itemTextColor="@drawable/icon_color"
+        app:labelVisibilityMode="unlabeled"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

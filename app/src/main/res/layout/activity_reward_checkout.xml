@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardCheckoutActivity"
+    android:id="@+id/parent_layout">
+
+    <ImageView
+        android:id="@+id/blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burger"
+
+
+
+        />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_content"
+        android:layout_width="320dp"
+        android:layout_height="540dp"
+        android:layout_margin="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/reward_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coca-cola"
+        app:layout_constraintTop_toTopOf="@id/image_content"
+        app:layout_constraintStart_toStartOf="@id/image_content"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/left_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/image_content"
+        app:layout_constraintEnd_toEndOf="@id/image_content"
+        android:text="27 Left"
+        android:textColor="@color/colorGreen"
+        />
+
+
+    <TextView
+        android:id="@+id/reward_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cool drink\nFab taste.\nAdded Flavors"
+        android:textColor="@color/colorGreen"
+        app:layout_constraintTop_toBottomOf="@id/reward_name"
+        app:layout_constraintStart_toStartOf="@id/reward_name"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/check_reward"
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="@id/image_content"
+        app:layout_constraintStart_toStartOf="@id/image_content"
+        app:layout_constraintEnd_toEndOf="@id/image_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_shape"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:id="@+id/share_main_reward"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:tint="@color/colorGreen"
+        app:layout_constraintBottom_toBottomOf="@id/image_content"
+        app:layout_constraintStart_toStartOf="@id/image_content"
+        app:layout_constraintEnd_toEndOf="@id/image_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/round_shape"
+        android:padding="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/onClicking_Share_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/check_reward"
+        app:layout_constraintBottom_toBottomOf="@id/image_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+
+        android:background="@drawable/round_corner_shape"
+        android:visibility="invisible"
+
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/share2"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_share_24"/>
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:src="@drawable/instagram"/>
+
+        <ImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:layout_gravity="center"
+            android:src="@drawable/whatsapp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

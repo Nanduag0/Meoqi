@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/event_view"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/background_event"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/event_photo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/event_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ems="3"
+            android:ellipsize="end"
+            android:text="Sula Fest"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@id/event_photo1"
+            app:layout_constraintStart_toEndOf="@id/event_photo1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/date_time_event"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fri,Sep 14 - Sat, Sep 15  *  7:00 PM UTC"
+            app:layout_constraintStart_toStartOf="@id/event_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/event_name"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/band_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Taylor Shift / Marshmello / AR Rahman / Jubin Nautiyal"
+            app:layout_constraintStart_toStartOf="@id/event_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_time_event"
+            app:layout_constraintBottom_toBottomOf="@id/event_photo1"
+            android:paddingTop="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

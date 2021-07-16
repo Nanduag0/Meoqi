@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.bottomSheet2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con1"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+
+            android:background="@drawable/card_bg"
+            android:backgroundTint="@color/colorBlack"
+
+
+            android:padding="5dp"
+            app:behavior_hideable="false"
+
+            app:behavior_peekHeight="505dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+            >
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomorrowland"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/v1"
+                />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/t1"
+                app:layout_constraintStart_toStartOf="@id/t1"
+                android:text="Seoul, South Korea"
+
+                android:textColor="#7D7777"/>
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhite"
+                app:layout_constraintTop_toBottomOf="@id/t2"
+                android:layout_marginTop="15dp"
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/v1">
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Early Bird"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/tt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs1000"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintTop_toBottomOf="@id/t11"
+                    app:layout_constraintStart_toStartOf="@id/t11"
+                    />
+
+                <include
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tt3"
+                    layout="@layout/icons"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

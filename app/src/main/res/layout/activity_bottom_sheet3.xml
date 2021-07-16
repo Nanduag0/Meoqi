@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EventPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tt_bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet_bg"
+        android:backgroundTint="#131313"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomorrowland"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/t1"
+            app:layout_constraintStart_toStartOf="@id/t1"
+            android:text="Seoul, South Korea"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toTopOf="@id/v1"
+            android:textColor="#7D7777"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@id/t2"
+            android:layout_marginTop="20dp"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ticket_type_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="4dp"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_ticket_type"
+            />
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingHorizontal="80dp"
+            android:background="@drawable/card_bg"
+            android:backgroundTint="#EB754F"
+            android:text="Buy Tickets"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@id/ticket_type_rv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

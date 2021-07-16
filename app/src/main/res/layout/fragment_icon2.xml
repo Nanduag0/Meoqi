@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="4dp"
+
+        android:background="@color/colorWhite"
+
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--merge1-->
+    <ImageView
+        android:id="@+id/ticket_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+
+        android:src="@drawable/ic_baseline_payment_24"
+        app:layout_constraintEnd_toStartOf="@id/reward_icon2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/v3"
+        app:layout_constraintTop_toBottomOf="@id/v2"
+
+
+
+
+        />
+
+    <!-- <ImageView
+         android:id="@+id/tick_icon"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:src="@drawable/ic_baseline_check_24"
+         app:tint="@color/colorWhite"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toStartOf="@id/reward_icon2"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+
+         />-->
+    <!--merge1-->
+
+
+    <!--merge2-->
+
+    <ImageView
+        android:id="@+id/reward_icon2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+
+        android:src="@drawable/ic_baseline_card_giftcard_24"
+        app:layout_constraintBottom_toBottomOf="@id/v3"
+        app:layout_constraintEnd_toStartOf="@id/bite_icon"
+        app:layout_constraintStart_toEndOf="@id/ticket_icon"
+        app:layout_constraintTop_toTopOf="@id/v2" />
+
+    <!--<ImageView
+        android:id="@+id/guest_list1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_list_alt_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bite_icon"
+        app:layout_constraintStart_toEndOf="@id/ticket_icon"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+    <TextView
+        android:id="@+id/reward_count2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="5"
+        android:visibility="invisible"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="@id/reward_icon2"
+        app:layout_constraintStart_toStartOf="@id/reward_icon2"
+        app:layout_constraintTop_toBottomOf="@id/reward_icon2" />
+
+    <!--merge2-->
+
+    <!--merge3-->
+
+    <ImageView
+        android:id="@+id/bite_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_fastfood_24"
+        app:layout_constraintBottom_toBottomOf="@id/v3"
+        app:layout_constraintEnd_toStartOf="@id/drinks_icon"
+        app:layout_constraintStart_toEndOf="@id/reward_icon2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/bites_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="@color/colorRed"
+
+        app:layout_constraintEnd_toEndOf="@id/bite_icon"
+        app:layout_constraintStart_toStartOf="@id/bite_icon"
+        app:layout_constraintTop_toBottomOf="@id/bite_icon" />
+
+    <!--<ImageView
+        android:id="@+id/ticket_icon2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_payment_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/drinks_icon"
+        app:layout_constraintStart_toEndOf="@id/reward_icon2"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--merge3-->
+
+    <!--merge4-->
+
+
+
+    <ImageView
+        android:id="@+id/drinks_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_emoji_food_beverage_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bite_icon"
+        app:layout_constraintTop_toTopOf="@id/v2"
+        app:layout_constraintBottom_toTopOf="@id/v3"
+        />
+
+    <TextView
+        android:id="@+id/drinks_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textColor="@color/colorGreen"
+        app:layout_constraintEnd_toEndOf="@id/drinks_icon"
+        app:layout_constraintStart_toStartOf="@id/drinks_icon"
+        app:layout_constraintTop_toBottomOf="@id/drinks_icon"
+        app:layout_constraintBottom_toTopOf="@id/v3"
+        />
+
+    <!--<ImageView
+        android:id="@+id/share_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bite_icon"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--merge3-->
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="4dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/l3" />
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@id/v4">
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info Demo Message......."
+            android:textColor="@color/colorWhite"
+            app:trimCollapsedText="more"
+            app:trimExpandedText="less"
+
+            app:colorClickableText="@color/colorGreen"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="4dp"
+
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@id/l5" />
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+
+            android:src="@drawable/ic_baseline_email_24"
+            app:tint="@color/colorWhite"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+
+            android:src="@drawable/ic_baseline_share_24" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

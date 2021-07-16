@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meoqi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Launcher">
+        <activity android:name=".Activities.SetUsernameAndPass"></activity>
+        <activity android:name=".Activities.DateActivity" />
+        <activity android:name=".Activities.ConvoActivity" />
+        <activity android:name=".Activities.ChatsActivity" />
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.FriendsActivity" />
+        <activity android:name=".Activities.TicketsActivity" />
+        <activity android:name=".Activities.ProfilePage" />
+        <activity android:name=".Activities.bottomSheet2" />
+        <activity android:name=".Activities.BottomSheetActivity" />
+        <activity android:name=".Activities.FoodMenuActivity" />
+        <activity android:name=".Activities.MoreInfoActivity" />
+        <activity android:name=".Activities.OrderCompletePage" />
+        <activity android:name=".Activities.EventList" />
+        <activity android:name=".Activities.RedeemPage" />
+        <activity android:name=".Activities.HomePage" />
+        <activity android:name=".Activities.EventPage" />
+        <activity android:name=".Activities.Friends" />
+        <activity android:name=".Pages.EventsActivityNew" />
+        <activity android:name=".LoginSignup.CreateProfileActivity" />
+        <activity android:name=".Utils.EventListActivity" />
+        <activity android:name=".LoginSignup.SignupActivity" />
+        <activity android:name=".Pages.SplashScreenActivity" />
+        <activity android:name=".LoginSignup.LoginActivity" />
+        <activity android:name=".GoodiesPage" />
+        <activity android:name=".DrinksPage" />
+        <activity android:name=".BitesPage" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ArtistPageActivity" />
+        <activity android:name=".RewardCheckoutActivity" />
+        <activity android:name=".ArtistProfile" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

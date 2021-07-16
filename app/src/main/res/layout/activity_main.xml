@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    >
+
+    <Button
+        android:id="@+id/b17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:onClick="openEventPage"/>
+
+
+
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artists Page"
+
+        app:layout_constraintTop_toBottomOf="@id/b17"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openArtistsPage"/>
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Page"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openProfilePage"/>
+
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bites Page"
+        app:layout_constraintTop_toBottomOf="@id/b4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openBitesPage"/>
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks Page"
+        app:layout_constraintTop_toBottomOf="@id/b6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openDrinksPage"/>
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goodies Page"
+        app:layout_constraintTop_toBottomOf="@id/b7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openGoodiesPage"/>
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event List Page"
+        app:layout_constraintTop_toBottomOf="@id/b8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openEventListPage"/>
+
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        app:layout_constraintTop_toBottomOf="@id/b9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openHomePage"/>
+
+    <Button
+        android:id="@+id/b11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redeem Page"
+        app:layout_constraintTop_toBottomOf="@id/b10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openRedeemPage"/>
+
+    <Button
+        android:id="@+id/b12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success Page"
+        app:layout_constraintTop_toBottomOf="@id/b11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openSuccessPage"/>
+
+    <Button
+        android:id="@+id/b13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Info"
+        app:layout_constraintTop_toBottomOf="@id/b12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openMoreInfoPage"/>
+
+    <Button
+        android:id="@+id/b14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Menu Page"
+        app:layout_constraintTop_toBottomOf="@id/b13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openFoodPage"/>
+
+    <Button
+        android:id="@+id/b15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Details Page"
+        app:layout_constraintTop_toBottomOf="@id/b14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openEventsListPage"/>
+
+    <Button
+        android:id="@+id/b16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Page"
+        app:layout_constraintTop_toBottomOf="@id/b15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openInvitePage"/>
+
+    <Button
+        android:id="@+id/b18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Page"
+        app:layout_constraintTop_toBottomOf="@id/b16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openEarlyPage"/>
+
+    <Button
+        android:id="@+id/b19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Page"
+        app:layout_constraintTop_toBottomOf="@id/b18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="openProfileNewPage"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

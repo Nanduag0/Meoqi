@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/image_card"
+        app:cardBackgroundColor="#343436"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="0dp"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/event_image"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="25th May 2020 - 27 May"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_card"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tommorrowland"
+        app:layout_constraintStart_toStartOf="@id/date"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seoul, South Korea"
+        android:textColor="#898484"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/t2"
+        app:layout_constraintStart_toStartOf="@id/date"
+        app:drawableStartCompat="@drawable/ic_pin"
+        app:drawableTint="#898484" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv2"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:background="@drawable/card_bg"
+        android:backgroundTint="#40A93814"
+        android:layout_marginTop="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="10dp"
+        >
+        <TextView
+            android:id="@+id/view_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="View more"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view_more_tv"
+            app:layout_constraintBottom_toBottomOf="@id/view_more_tv"
+            app:layout_constraintStart_toEndOf="@id/view_more_tv"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:tint="#F44336" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "594701710273",
+    "firebase_url": "https://meoqi-91546.firebaseio.com",
+    "project_id": "meoqi-91546",
+    "storage_bucket": "meoqi-91546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594701710273:android:b72120831d0dcf2414f540",
+        "android_client_info": {
+          "package_name": "com.example.meoqi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594701710273-idqmatjckognuinvtdmj9s6vjak22fs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGsUdhcwrkvBt6uB1ZdY9uPeIaH5Q4dWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594701710273-idqmatjckognuinvtdmj9s6vjak22fs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
