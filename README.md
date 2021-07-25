@@ -1,7 +1,7 @@
 # Meoqi_Intern
-An android application for a event ticket booking system
+**An android application for a event ticket booking system
 
-
+**
 **FEACTURES:**
 
 Major points:
@@ -74,53 +74,54 @@ chat with the friend.
 
 ![image](https://user-images.githubusercontent.com/57056324/126899774-42181dea-750a-4baf-87bc-bf357e9697cf.png)
 
-Register Activity
+**Register Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126899861-031a05cc-a22b-46a7-90a4-5a47b805bc16.png)
 
-Login Activity 
+**Login Activity **
 
 ![image](https://user-images.githubusercontent.com/57056324/126899880-c004b8ca-8e48-429e-a84b-029883722b57.png)
 
 
-Event List Activity
+**Event List Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126899891-b872f58b-c5b3-4190-902b-ea94ea1de461.png)
 
-Even Detail Activity 
+**Even Detail Activity **
 
 
 ![image](https://user-images.githubusercontent.com/57056324/126899923-20b5fc0a-c270-4d4d-b751-1097c3a71fc3.png)
 
 ![image](https://user-images.githubusercontent.com/57056324/126899964-a0c79a65-8133-4894-a02f-1b0172eb325c.png)
 
-Artist Activity
+**Artist Activity
+**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900050-3df26c5b-9eb1-47b6-b8e1-6f2d9eeca564.png)
 
 ![image](https://user-images.githubusercontent.com/57056324/126900060-0e20878e-d7de-4c5a-968e-1420be3b7220.png)
 
-Profile Activity
+**Profile Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900104-3e603138-d921-4eb1-813d-7ef830098b24.png)
 
-Chat Activity
+**Chat Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900130-deddca16-3865-4dba-b6d3-638653f8269d.png)
 
-Food ,drinks Activity 
+**Food ,drinks Activity **
 
 ![image](https://user-images.githubusercontent.com/57056324/126900146-421c1e18-2ac8-4058-937c-f79c6b6c96df.png)
 
-Ticket Activity 
+**Ticket Activity **
 
 ![image](https://user-images.githubusercontent.com/57056324/126900179-61a67d7d-99f5-44fc-87c4-69caa3c0951e.png)
 
-Redeem Activity 
+**Redeem Activity **
 
 ![image](https://user-images.githubusercontent.com/57056324/126900194-7a39c89b-d255-49cd-a858-034ae21f65b8.png)
 
-Payment Activity 
+**Payment Activity **
 
 ![image](https://user-images.githubusercontent.com/57056324/126900213-ef20d288-d38a-4cb9-a00d-79260bd25555.png)
 
