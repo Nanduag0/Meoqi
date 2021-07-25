@@ -6,35 +6,36 @@ An android application for a event ticket booking system
 
 Major points:
 
-● The app consists of event pages,artist page,food page,drinks page,goodies page.
-● The app has a profile section and a friends section that has a chat session.
-● The app allows users to buy tickets to a particular event.
-● A user can chat with a friend and his status changes to online.
-● A user can buy a number of tickets and can share the tickets.
-● Upon getting the redeem code a user can redeem the code and get his ticket.
-● For a particular event there are a fixed number of guest passes.
-● A user can share the guest ticket and other users can redeem the guest pass code.
-● After a particular number of users have redeemed the initiator user gets a fixed number
+1. The app consists of event pages,artist page,food page,drinks page,goodies page.
+2. The app has a profile section and a friends section that has a chat session.
+3. The app allows users to buy tickets to a particular event.
+4. A user can chat with a friend and his status changes to online.
+5. A user can buy a number of tickets and can share the tickets.
+6. Upon getting the redeem code a user can redeem the code and get his ticket.
+7.  For a particular event there are a fixed number of guest passes.
+8.  A user can share the guest ticket and other users can redeem the guest pass code.
+9.  After a particular number of users have redeemed the initiator user gets a fixed number
 of free drinks,food and goodies.
-● In the friends sections there is a chat session,favourite session,friend profile section.
-● Some particular foods ,drinks and goodies associated with an event are displayed which
+10. In the friends sections there is a chat session,favourite session,friend profile section.
+11. Some particular foods ,drinks and goodies associated with an event are displayed which
 are available for rating.
-● Foods related to chefs and Drinks related to mixologists are displayed.
-● The artist section has links to spotify ,bandchamp,mixcloud and soundcloud webviews.
-● The real time notification through which the user receives notification on friends request
+12. Foods related to chefs and Drinks related to mixologists are displayed.
+13. The artist section has links to spotify ,bandchamp,mixcloud and soundcloud webviews.
+14.  The real time notification through which the user receives notification on friends request
 approval,chatlist ,tickets purchase and redeemed and guest tickets redeem.
 
 
-Services:
-● Firebase
+**Services:**
+--> Firebase
 1. Google, Facebook Authentication
 2. Real-time Database
 3. Crashalytics, Analytics, Performance Monitoring
 4. Firebase Cloud Messaging
 
-● RESTful APIs
+--> RESTful APIs
 
-Libraries:
+**Libraries:**
+
 ● Retrofit [for APIs handling]
 ● Glide [for handling image events]
 ● Circle Image View
@@ -43,7 +44,8 @@ Libraries:
 ● QRGenerator
 ● ButterKnife
 
-Login Flow:
+**Login Flow:**
+
 ● Firebase authentication or server side authentication will be done
 ● The userID will be provided by the server.
 ● A new user has to make his profile and save it.
@@ -66,7 +68,7 @@ chat with the friend.
 
 
 
-Architecture:
+**Architecture:**
 
 **MVVM.**
 
