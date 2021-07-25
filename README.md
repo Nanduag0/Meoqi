@@ -36,35 +36,35 @@ approval,chatlist ,tickets purchase and redeemed and guest tickets redeem.
 
 **Libraries:**
 
-● Retrofit [for APIs handling]
-● Glide [for handling image events]
-● Circle Image View
-● Recycler View
-● Materials
-● QRGenerator
-● ButterKnife
+1. Retrofit [for APIs handling]
+2. Glide [for handling image events]
+3. Circle Image View
+4. Recycler View
+5. Materials
+6. QRGenerator
+7. ButterKnife
 
 **Login Flow:**
 
-● Firebase authentication or server side authentication will be done
-● The userID will be provided by the server.
-● A new user has to make his profile and save it.
-● The Home Screen of the app comes into view where there are event cards with
+1. Firebase authentication or server side authentication will be done
+2. The userID will be provided by the server.
+3. A new user has to make his profile and save it.
+4. The Home Screen of the app comes into view where there are event cards with
 date,event name ,artist names and location is shown.
-● On clicking a particular card the user is taken to the event page where he is provided
+5. On clicking a particular card the user is taken to the event page where he is provided
 the artist section,map section,ticket section .
-● The user can view the ticket passes price of the tickets and check its availability.
-● The user can view the guest passes price and the foods ,drinks and the goodies it
+6. The user can view the ticket passes price of the tickets and check its availability.
+7. The user can view the guest passes price and the foods ,drinks and the goodies it
 comes with.
-● The mapview enables him to see the exact location where the event will be held.
-● He can view the drinks by mixologists and rate it,similarly with foods and goodies.
-● The user can share the guest and the tickets pass.
-● On redeem a friend of a user gets his ticket or the guest pass.
-● A user can search friends and see their profile.
-● He can send a request ,accept a request or reject it.
-● As soon as the user accepts a request the friend is added to the chatlist and he can
+8. The mapview enables him to see the exact location where the event will be held.
+9. He can view the drinks by mixologists and rate it,similarly with foods and goodies.
+10. The user can share the guest and the tickets pass.
+11. On redeem a friend of a user gets his ticket or the guest pass.
+12. A user can search friends and see their profile.
+13. He can send a request ,accept a request or reject it.
+14. As soon as the user accepts a request the friend is added to the chatlist and he can
 chat with the friend.
-● He can favourite the friend and then the name comes in the favourite section.
+15. He can favourite the friend and then the name comes in the favourite section.
 
 
 
