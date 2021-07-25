@@ -5,6 +5,7 @@ An android application for a event ticket booking system
 **FEACTURES:**
 
 Major points:
+
 ● The app consists of event pages,artist page,food page,drinks page,goodies page.
 ● The app has a profile section and a friends section that has a chat session.
 ● The app allows users to buy tickets to a particular event.
