@@ -109,23 +109,24 @@ chat with the friend.
 
 ![image](https://user-images.githubusercontent.com/57056324/126900130-deddca16-3865-4dba-b6d3-638653f8269d.png)
 
-**Food ,drinks Activity **
+**Food ,drinks Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900146-421c1e18-2ac8-4058-937c-f79c6b6c96df.png)
 
-**Ticket Activity **
+**Ticket Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900179-61a67d7d-99f5-44fc-87c4-69caa3c0951e.png)
 
-**Redeem Activity **
+**Redeem Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900194-7a39c89b-d255-49cd-a858-034ae21f65b8.png)
 
-**Payment Activity **
+**Payment Activity**
 
 ![image](https://user-images.githubusercontent.com/57056324/126900213-ef20d288-d38a-4cb9-a00d-79260bd25555.png)
 
-**Food Activity ** 
+**Food Activity** 
+
 
 ![image](https://user-images.githubusercontent.com/57056324/132958946-8f45767e-5102-4b78-983f-ddb94c6d0125.png)
 
@@ -133,15 +134,20 @@ chat with the friend.
 
 ![image](https://user-images.githubusercontent.com/57056324/132958954-14c30d7e-103a-485f-abf3-27c9187346f3.png)
 
-** Notification Activity ** 
+
+
+**Notification Activity** 
 
 
 ![image](https://user-images.githubusercontent.com/57056324/132958991-c42f5580-e82d-44f7-a615-b3a18f174247.png)
 
-** Request Activity**
+
+**Request Activity**
 
 
 ![image](https://user-images.githubusercontent.com/57056324/132959020-665337a4-78c3-4f03-84ca-0adb6b487503.png)
+
+
 
 **Map Activity**
 
