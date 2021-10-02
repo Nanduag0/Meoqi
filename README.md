@@ -1,4 +1,4 @@
-# Meoqi_Intern
+# Meoqi
 **An android application for a event ticket booking system
 
 **
